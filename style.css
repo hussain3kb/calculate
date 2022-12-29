@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: rgb(137, 240, 240);
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-display {
+  height: 90px;
+  color: white;
+  margin: 0 0 -5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.calculator-display h1 {
+  font-family: sans-serif;
+  background: white;
+  text-align: right;
+  color: black;
+  border-radius: 12px;
+  width: 90%;
+  margin: 10px 0 0;
+  padding-right: 10px;
+  font-size: 45px;
+  font-weight: 100;
+  overflow-x: auto;
+  box-shadow: 0px 0px 30px 0px rgba(112, 111, 111, 0.3);
+}
+h3 {
+  display: flex;
+  padding-left: 5px;
+  border-radius: 8px;
+  margin: -25px auto 12px;
+  padding: 2px;
+  height: 20px;
+  width: 90%;
+  font-family: sans-serif;
+  background: rgb(231, 231, 231);
+  box-shadow: 0px 0px 30px 0px rgba(112, 111, 111, 0.3);
+}
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 10px 10px;
+  gap: 10px;
+}
+
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.925);
+  box-shadow: 0px 0px 30px 0px rgba(165, 165, 165, 0.76);
+}
+
+button:hover {
+  filter: brightness(120%);
+  transform: translateY(2px);
+}
+button:active {
+  transform: translateY(0px);
+}
+button:focus {
+  outline: none;
+}
+.operator {
+  background-color: rgb(233, 232, 232);
+  color: rgb(128, 125, 125);
+  font-size: 40px;
+}
+.operator:hover {
+  color: rgb(66, 64, 62);
+  transform: translateY(-4px);
+  font-size: 42px;
+}
+
+.clear-one {
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
+  font-size: 40px;
+}
+.clear {
+  background-color: red;
+  color: white;
+  font-size: 30px;
+}
+
+.clear:hover {
+  filter: brightness(80%);
+}
+
+.equal-sign {
+  color: rgb(255, 255, 255);
+
+  grid-column: -2;
+  grid-row: 3 / 6;
+  background: rgb(13, 206, 87);
+}
+
+.equal-sign:hover {
+  filter: brightness(110%);
+  transform: translateY(2px);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media query */
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
+}
