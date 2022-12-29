@@ -93,6 +93,11 @@ button:focus {
   font-size: 42px;
 }
 
+.dmos:focus {
+  filter: brightness(120%);
+  transform: translateY(-4px);
+}
+
 .clear-one {
   background-color: rgb(255, 255, 255);
   color: rgb(68, 68, 68);
@@ -118,7 +123,11 @@ button:focus {
 
 .equal-sign:hover {
   filter: brightness(110%);
-  transform: translateY(2px);
+  transform: translateY(3px);
+}
+
+.equal-sign:active {
+  transform: translateY(0px);
 }
 
 .hidden {
